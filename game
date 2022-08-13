@@ -18,8 +18,9 @@ sleep(1)
 clearConsole()
 print ("      ")
 print("...")
-def main():
- print ("      ")
+clearConsole()
+sleep(0.2)
+print ("      ")
 print ("_______________________")
 print ("to continue in the game type, next. to get a description, type help")
 anser = input("type here: ")
@@ -93,7 +94,7 @@ if anser == "next":
     print("food",food)
     print("health",health)
     print("_______________")
-    print("you will lose hunger slowly if you run out you will start taking dammage.")
+    print("you will lose hunger slowly if you run out you will start taking damage.")
     print("in order to get more food you will have to buy it. if your food is full you will slowly heal")
     print("you can make a living by killing monsters")
     
@@ -101,15 +102,12 @@ if anser == "next":
 else:
     print ("_________________________________________")
     print ("this is a game about survival get money and become wealthy and health. if you want to go back to the menu type   back")
-    yn = input('type here: ')
-    if yn == 'yes':
-
-
-    
+    back = input('type here: ')
+    if back == 'back':
      print("___________________________")
-    print ("to continue in the game type, next. to get a description, type help")
-    anser = input("type here: ")
-    if anser == "next":
+     print ("to continue in the game type, next. to get a description, type help")
+     anser = input("type here: ")
+     if anser == "next":
             print ("moving you to the menu. pls wait")
             clearConsole()
             print ("      ")
